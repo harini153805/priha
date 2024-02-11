@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=, initial-scale=1.0">
+  <title>Makeup</title>
+  <link rel="shortcut icon" href="priha.png" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="beauty1.css">
+ </head>
+ <body>
+  <header class="container">
+   <nav class="flex space-between border">
+    <div class="left flex">
+     <img class="logo" src="priha.png" alt="">
+     <ul class="flex item-center justify-center uppercase">
+      <li>
+       <a class="icon" href="skin.html">Skincare</a>
+      </li>
+      <li>
+       <a class="icon" href="lip.html">Makeup</a>
+      </li>
+      <li>
+       <a class="icon" href="hair.html">Haircare</a>
+      </li>
+     </ul>
+    </div>
+    <div class="right flex item-center uppercase space-between">
+     <input class="search all" placeholder="Search for products">
+     <ul class="flex item-center justify-center uppercase">
+      <li>
+       <a class="Wishlist mx-2 flex item-center justify-center uppercase" href="">Wishlist</a>
+      </li>
+      <li>
+       <a class="Cart mx-2 flex item-center justify-center uppercase" href="">cart</a>
+      </li>
+      <li>
+       <a class="Profile mx-2 flex item-center justify-center uppercase" href="">Profile</a>
+      </li>
+     </ul>
+    </div>
+   </nav>
+  </header>
+  <section class="container flex">
+   <figure>
+    <img class="homeimg" src="censoral.jpg" alt="">
+    <p class="name">Maybelline censoral mascara</p>
+    <p class="price"> Rs.200</p>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-solid fa-star-half" style="color: #0c4b0c;"></i>
+    <div>
+     <button onclick="addToCart('Maybelline colossal mascara',200)">Add to cart</button>
+     <button type="button" onclick="alert('Added to wishlist')">wishlist</button>
+    </div>
+   </figure>
+   <figure>
+    <img class="homeimg" src="colo.jpg" alt="">
+    <p class="name">Maybelline colossal kajal</p>
+    <p class="price"> Rs.399</p>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-solid fa-star-half" style="color: #0c4b0c;"></i>
+    <div>
+     <button onclick="addToCart('Maybelline colossal kajal',399)">Add to cart</button>
+     <button type="button" onclick="alert('Added to wishlist')">wishlist</button>
+    </div>
+   </figure>
+   <figure>
+    <img class="homeimg" src="https://imgix.bustle.com/uploads/image/2019/7/29/28acdfd1-a697-485e-9923-d13b0684f75a-66097611_2377910928911577_3779098267576819634_n.jpg?w=800&fit=crop&crop=faces&auto=format%2Ccompress&q=50&dpr=2" alt="">
+    <p class="name">kyle lipsticks</p>
+    <p class="price"> Rs.399</p>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-solid fa-star-half" style="color: #0c4b0c;"></i>
+    <div>
+     <button onclick="addToCart('kyle lipsticks',399)">Add to cart</button>
+     <button type="button" onclick="alert('Added to wishlist')">wishlist</button>
+    </div>
+   </figure>
+   <figure>
+    <img class="homeimg" src="Dazller-Eterna-Lipstick1.jpg" alt="">
+    <p class="name">Dazzler eterna lipstick</p>
+    <p class="price"> Rs.299</p>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <div>
+     <button onclick="addToCart('Dazzler eterna lipstick',299)">Add to cart</button>
+     <button type="button" onclick="alert('Added to wishlist')">wishlist</button>
+    </div>
+   </figure>
+  </section>
+  <section class="container flex">
+   <figure>
+    <img class="homeimg" src="dioe.jpg" alt="">
+    <p class="name">Dioer eyeliner</p>
+    <p class="price"> Rs.189</p>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <div>
+     <button onclick="addToCart('Dioer eyeliner',189)">Add to cart</button>
+     <button type="button" onclick="alert('Added to wishlist')">wishlist</button>
+    </div>
+   </figure>
+   <figure>
+    <img class="homeimg" src="http://images.qvc.com/is/image/a/42/a292542.001" alt="">
+    <p class="name">Mally classic lipstick</p>
+    <p class="price"> Rs.189</p>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <div>
+     <button onclick="addToCart('Mally classic lipstick',189)">Add to cart</button>
+     <button type="button" onclick="alert('Added to wishlist')">wishlist</button>
+    </div>
+   </figure>
+   <figure>
+    <img class="homeimg" src="fit.jpg" alt="">
+    <p class="name">Fitme foundation</p>
+    <p class="price"> Rs.599</p>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <div>
+     <button onclick="addToCart('Fitme foundation ',599)">Add to cart</button>
+     <button type="button" onclick="alert('Added to wishlist')">wishlist</button>
+    </div>
+   </figure>
+   <figure>
+    <img class="homeimg" src="foto.jpg" alt="">
+    <p class="name">Fondrava foundation</p>
+    <p class="price"> Rs.1200</p>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <div>
+     <button onclick="addToCart('Fondrava foundation',1200)">Add to cart</button>
+     <button type="button" onclick="alert('Added to wishlist')">wishlist</button>
+    </div>
+   </figure>
+  </section>
+  <section class="container flex">
+   <figure>
+    <img class="homeimg" src="glam.jpg" alt="">
+    <p class="name">She glam lip tint</p>
+    <p class="price"> Rs.299</p>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <div>
+     <button onclick="addToCart('Glow in lipgloss',299)">Add to cart</button>
+     <button type="button" onclick="alert('Added to wishlist')">wishlist</button>
+    </div>
+   </figure>
+   <figure>
+    <img class="homeimg" src="http://weheartthis.com/wp-content/uploads/2016/05/IT-Cosmetics-Naturally-Pretty-Essentials-Palette-1.jpg" alt="">
+    <p class="name">Pretty eyeshadow palette</p>
+    <p class="price"> Rs.299</p>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <div>
+     <button onclick="addToCart('Pretty eyeshadow palette',299)">Add to cart</button>
+     <button type="button" onclick="alert('Added to wishlist')">wishlist</button>
+    </div>
+   </figure>
+   <figure>
+    <img class="homeimg" src="glowin.jpg" alt="">
+    <p class="name">Glow in lipgloss</p>
+    <p class="price"> Rs.350</p>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <div>
+     <button onclick="addToCart('Glow in lipgloss',350)">Add to cart</button>
+     <button type="button" onclick="alert('Added to wishlist')">wishlist</button>
+    </div>
+   </figure>
+   <figure>
+    <img class="homeimg" src="GROUP.jpg" alt="">
+    <p class="name">Honest lipkit</p>
+    <p class="price"> Rs.299</p>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <div>
+     <button onclick="addToCart('Revlon lipstick',299)">Add to cart</button>
+     <button type="button" onclick="alert('Added to wishlist')">wishlist</button>
+    </div>
+   </figure>
+  </section>
+  <section class="container flex">
+   <figure>
+    <img class="homeimg" src="lip.jpg" alt="">
+    <p class="name">Revlon lipstick</p>
+    <p class="price"> Rs.499</p>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <div>
+     <button onclick="addToCart('Revlon lipstick',499)">Add to cart</button>
+     <button type="button" onclick="alert('Added to wishlist')">wishlist</button>
+    </div>
+   </figure>
+   <figure>
+    <img class="homeimg" src="https://tse4.mm.bing.net/th?id=OIP.QEcQGzXJTdzgFyTEBcAwBQHaJ4&pid=Api&P=0&h=180" alt="">
+    <p class="name">Kyle eyeshadow palette</p>
+    <p class="price"> Rs.499</p>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <div>
+     <button onclick="addToCart('Revlon lipstick',499)">Add to cart</button>
+     <button type="button" onclick="alert('Added to wishlist')">wishlist</button>
+    </div>
+   </figure>
+   <figure>
+    <img class="homeimg" src="lip1.jpg" alt="">
+    <p class="name">Mac lip combo kit</p>
+    <p class="price"> Rs.499</p>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <div>
+     <button onclick="addToCart('Mac lip combo kit',499)">Add to cart</button>
+     <button type="button" onclick="alert('Added to wishlist')">wishlist</button>
+    </div>
+   </figure>
+   <figure>
+    <img class="homeimg" src="mac.jpg" alt="">
+    <p class="name">Mac blush</p>
+    <p class="price"> Rs.499</p>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <div>
+     <button onclick="addToCart('Mac blush',499)">Add to cart</button>
+     <button type="button" onclick="alert('Added to wishlist')">wishlist</button>
+    </div>
+   </figure>
+  </section>
+  <section class="container flex">
+   <figure>
+    <img class="homeimg" src="http://i.ebayimg.com/images/g/tVUAAOSwbg9W6x03/s-l1600.jpg" alt="">
+    <p class="name">Makeup revolution</p>
+    <p class="price"> Rs.199</p>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <div>
+     <button onclick="addToCart('Makeup revolution',199)">Add to cart</button>
+     <button type="button" onclick="alert('Added to wishlist')">wishlist</button>
+    </div>
+   </figure>
+   <figure>
+    <img class="homeimg" src="nars.jpg" alt="">
+    <p class="name">Nars blush</p>
+    <p class="price"> Rs.199</p>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <div>
+     <button onclick="addToCart('Nars blush',199)">Add to cart</button>
+     <button type="button" onclick="alert('Added to wishlist')">wishlist</button>
+    </div>
+   </figure>
+   <figure>
+    <img class="homeimg" src="nyka.jpg" alt="">
+    <p class="name">Nyka lipstick</p>
+    <p class="price"> Rs.199</p>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <div>
+     <button onclick="addToCart('Nyka lipstick',199)">Add to cart</button>
+     <button type="button" onclick="alert('Added to wishlist')">wishlist</button>
+    </div>
+   </figure>
+   <figure>
+    <img class="homeimg" src="opop.jpg" alt="">
+    <p class="we">Mac nude lipstick</p>
+    <p class="we"> Rs.250</p>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-solid fa-star-half" style="color: #0c4b0c;"></i>
+    <div>
+     <button onclick="addToCart('Mac nude lipstick',250)">Add to cart</button>
+     <button type="button" onclick="alert('Added to wishlist')">wishlist</button>
+    </div>
+   </figure>
+  </section>
+  <section class="container flex">
+   <figure>
+    <img class="homeimg" src="https://tse3.mm.bing.net/th?id=OIP.JCAh8--swbcBz5UzXXg8owHaHU&pid=Api&P=0&h=180" alt="">
+    <p class="name">Cargo palette</p>
+    <p class="price"> Rs.250</p>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-solid fa-star-half" style="color: #0c4b0c;"></i>
+    <div>
+     <button onclick="addToCart('Cargo palette',250)">Add to cart</button>
+     <button type="button" onclick="alert('Added to wishlist')">wishlist</button>
+    </div>
+   </figure>
+   <figure>
+    <img class="homeimg" src="po.jpg" alt="">
+    <p class="name">Fitme poreless foundation</p>
+    <p class="price"> Rs.250</p>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-solid fa-star-half" style="color: #0c4b0c;"></i>
+    <div>
+     <button onclick="addToCart('Fitme poreless foundation',250)">Add to cart</button>
+     <button type="button" onclick="alert('Added to wishlist')">wishlist</button>
+    </div>
+   </figure>
+   <figure>
+    <img class="homeimg" src="poll.jpg" alt="">
+    <p class="name">Nars liquid foundation</p>
+    <p class="price"> Rs.350</p>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <div>
+     <button onclick="addToCart('Nars liquid foundation',350)">Add to cart</button>
+     <button type="button" onclick="alert('Added to wishlist')">wishlist</button>
+    </div>
+   </figure>
+   <figure>
+    <img class="homeimg" src="sep.jpg" alt="">
+    <p class="name">Sephora matte foundation</p>
+    <p class="price"> Rs.599</p>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-solid fa-star-half" style="color: #0c4b0c;"></i>
+    <div>
+     <button onclick="addToCart('Sephora matte foundation',599)">Add to cart</button>
+     <button type="button" onclick="alert('Added to wishlist')">wishlist</button>
+    </div>
+   </figure>
+  </section>
+  <footer>
+   <div class="footer-container">
+    <div class="footer-section">
+     <h4>About Priha Cosmetics</h4>
+     <p>Your go-to destination for natural beauty products that enhance your radiance and confidence.</p>
+    </div>
+    <div class="footer-section">
+     <h4>Quick Links</h4>
+     <ul>
+      <li>
+       <a href="index.html">Shop</a>
+      </li>
+      <li>
+       <a href="about.html">Our Story</a>
+      </li>
+      <li>
+       <a href="#">Blog</a>
+      </li>
+      <li>
+       <a href="contact.html">Contact Us</a>
+      </li>
+     </ul>
+    </div>
+    <div class="footer-section">
+     <h4>Customer Service</h4>
+     <ul>
+      <li>
+       <a href="#">FAQs</a>
+      </li>
+      <li>
+       <a href="#">Shipping & Returns</a>
+      </li>
+      <li>
+       <a href="#">Privacy Policy</a>
+      </li>
+      <li>
+       <a href="#">Terms of Service</a>
+      </li>
+     </ul>
+    </div>
+    <div class="footer-section">
+     <h4>Connect with Us</h4>
+     <ul class="social-icons">
+      <li>
+       <a href="#" class="icon-facebook"></a>
+      </li>
+      <li>
+       <a href="#" class="icon-twitter"></a>
+      </li>
+      <li>
+       <a href="#" class="icon-instagram"></a>
+      </li>
+     </ul>
+    </div>
+   </div>
+   <div class="footer-bottom">
+    <p class="copy">&copy; 2024 Priha Cosmetics. All rights reserved. | Designed by Your Company</p>
+   </div>
+  </footer>
+  <script src="app.js" defer></script>
+  <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+ </body>
+</html>

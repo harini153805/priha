@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skincare</title>
+  <link rel="shortcut icon" href="priha.png" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="beauty1.css">
+ </head>
+ <body>
+  <header class="container">
+   <nav class="flex space-between border">
+    <div class="left flex">
+     <img class="logo" src="priha.png" alt="">
+     <ul class="flex item-center justify-center uppercase">
+      <li>
+       <a class="icon" href="skin.html">Skincare</a>
+      </li>
+      <li>
+       <a class="icon" href="lip.html">Makeup</a>
+      </li>
+      <li>
+       <a class="icon" href="hair.html">Haircare</a>
+      </li>
+     </ul>
+    </div>
+    <div class="right flex item-center uppercase space-between">
+     <input class="search all" placeholder="Search for products">
+     <ul class="flex item-center justify-center uppercase">
+      <li>
+       <a class="Wishlist mx-2" href="">Wishlist</a>
+      </li>
+      <li>
+       <a class="Cart mx-2" href="">cart</a>
+      </li>
+      <li>
+       <a class="Profile mx-2" href="">Profile</a>
+      </li>
+     </ul>
+    </div>
+   </nav>
+  </header>
+  <section class="container flex">
+   <figure>
+    <img class="homeimg" src="t.PNG" alt="">
+    <p class="name">Aqualogica Hydrating serum </p>
+    <p class="price"> Rs.200</p>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-solid fa-star-half" style="color: #0c4b0c;"></i>
+    <div>
+     <button onclick="addToCart('Aqualogica Hydrating serum ',299)">Add to cart</button>
+     <button type="button" onclick="alert('Added to wishlist')">wishlist</button>
+    </div>
+   </figure>
+   <figure>
+    <img class="homeimg" src="u.PNG" alt="">
+    <p class="name">Aqualogica sunscreen </p>
+    <p class="price"> Rs.299</p>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-solid fa-star-half" style="color: #0c4b0c;"></i>
+    <div>
+     <button onclick="addToCart('Aqualogica sunscreen ',299)">Add to cart</button>
+     <button type="button" onclick="alert('Added to wishlist')">wishlist</button>
+    </div>
+   </figure>
+   <figure>
+    <img class="homeimg" src="v.PNG" alt="">
+    <p class="name">Vaseline deep moisturiser </p>
+    <p class="price"> Rs.199</p>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <div>
+     <button onclick="addToCart('Vaseline deep moisturiser ',199)">Add to cart</button>
+     <button type="button" onclick="alert('Added to wishlist')">wishlist</button>
+    </div>
+   </figure>
+   <figure>
+    <img class="homeimg" src="https://i.pinimg.com/originals/54/3b/ea/543bea94c862123797c4f7cb549f102b.jpg" alt="">
+    <p class="name">Hibiscus kit </p>
+    <p class="price"> Rs.199</p>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <div>
+     <button onclick="addToCart('Hibiscus kit ',189)">Add to cart</button>
+     <button type="button" onclick="alert('Added to wishlist')">wishlist</button>
+    </div>
+   </figure>
+  </section>
+  <section class="container flex">
+   <figure>
+    <img class="homeimg" src="w.PNG" alt="">
+    <p class="name">Aqulogica Detan face serum </p>
+    <p class="price"> Rs.189</p>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <div>
+     <button onclick="addToCart('Aqulogica Detan face serum ',189)">Add to cart</button>
+     <button type="button" onclick="alert('Added to wishlist')">wishlist</button>
+    </div>
+   </figure>
+   <figure>
+    <img class="homeimg" src="y.PNG" alt="">
+    <p class="name">Minimalist </p>
+    <p class="price"> Rs.800</p>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <div>
+     <button onclick="addToCart('Minimalist ',800)">Add to cart</button>
+     <button type="button" onclick="alert('Added to wishlist')">wishlist</button>
+    </div>
+   </figure>
+   <figure>
+    <img class="homeimg" src="https://i.pinimg.com/originals/e6/b7/49/e6b74989f13720cd8da816a25ced5e58.jpg" alt="">
+    <p class="name">Pink cloud skincare kit </p>
+    <p class="price"> Rs.1200</p>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <div>
+     <button onclick="addToCart('Pink cloud skincare kit',1200)">Add to cart</button>
+     <button type="button" onclick="alert('Added to wishlist')">wishlist</button>
+    </div>
+   </figure>
+   <figure>
+    <img class="homeimg" src="s.PNG" alt="">
+    <p class="name">Minimalist lip balm </p>
+    <p class="price"> Rs.1200</p>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <div>
+     <button onclick="addToCart('Minimalist lip balm',1200)">Add to cart</button>
+     <button type="button" onclick="alert('Added to wishlist')">wishlist</button>
+    </div>
+   </figure>
+  </section>
+  <section class="container flex">
+   <figure>
+    <img class="homeimg" src="r.PNG" alt="">
+    <p class="name">Cetaphil cleanser </p>
+    <p class="price"> Rs.699</p>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <div>
+     <button onclick="addToCart('Cetaphil cleanser',699)">Add to cart</button>
+     <button type="button" onclick="alert('Added to wishlist')">wishlist</button>
+    </div>
+   </figure>
+   <figure>
+    <img class="homeimg" src="q.PNG" alt="">
+    <p class="name">Aqualogica cream </p>
+    <p class="price"> Rs.799</p>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <div>
+     <button onclick="addToCart('Aqualogica cream',799)">Add to cart</button>
+     <button type="button" onclick="alert('Added to wishlist')">wishlist</button>
+    </div>
+   </figure>
+   <figure>
+    <img class="homeimg" src="p.PNG" alt="">
+    <p class="name">Aqualogica face wash </p>
+    <p class="price"> Rs.399</p>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <div>
+     <button onclick="addToCart('Aqualogica face wash',399)">Add to cart</button>
+     <button type="button" onclick="alert('Added to wishlist')">wishlist</button>
+    </div>
+   </figure>
+   <figure>
+    <img class="homeimg" src="https://amberskincarediary.com/wp-content/uploads/2019/12/IMG_7300-min-scaled.jpeg" alt="">
+    <p class="name">UBUNA Skincare kit </p>
+    <p class="price"> Rs.399</p>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <div>
+     <button onclick="addToCart('UBUNA Skincare kit',399)">Add to cart</button>
+     <button type="button" onclick="alert('Added to wishlist')">wishlist</button>
+    </div>
+   </figure>
+  </section>
+  <section class="container flex">
+   <figure>
+    <img class="homeimg" src="o.PNG" alt="">
+    <p class="name">Aqualogica lip cream </p>
+    <p class="price"> Rs.299</p>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <div>
+     <button onclick="addToCart('Aqualogica lip cream',299)">Add to cart</button>
+     <button type="button" onclick="alert('Added to wishlist')">wishlist</button>
+    </div>
+   </figure>
+   <figure>
+    <img class="homeimg" src="k.PNG" alt="">
+    <p class="name">Plum serum </p>
+    <p class="price"> Rs.499</p>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <div>
+     <button onclick="addToCart('Plum serum',499)">Add to cart</button>
+     <button type="button" onclick="alert('Added to wishlist')">wishlist</button>
+    </div>
+   </figure>
+   <figure>
+    <img class="homeimg" src="l.PNG" alt="">
+    <p class="name">Dot and key cream </p>
+    <p class="price"> Rs.599</p>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <div>
+     <button onclick="addToCart('Dot and key cream',599)">Add to cart</button>
+     <button type="button" onclick="alert('Added to wishlist')">wishlist</button>
+    </div>
+   </figure>
+   <figure>
+    <img class="homeimg" src="https://ucarecdn.com/1ee74708-5e20-48b0-a503-c962f91a31d7/" alt="">
+    <p class="name">EMEV Skincare kit </p>
+    <p class="price"> Rs.599</p>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <div>
+     <button onclick="addToCart('EMEV Skincare kit',599)">Add to cart</button>
+     <button type="button" onclick="alert('Added to wishlist')">wishlist</button>
+    </div>
+   </figure>
+  </section>
+  <section class="container flex">
+   <figure>
+    <img class="homeimg" src="e.PNG" alt="">
+    <p class="name">Aqualogica body wash </p>
+    <p class="price"> Rs.999</p>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <div>
+     <button onclick="addToCart('Aqualogica body wash',999)">Add to cart</button>
+     <button type="button" onclick="alert('Added to wishlist')">wishlist</button>
+    </div>
+   </figure>
+   <figure>
+    <img class="homeimg" src="a.PNG" alt="">
+    <p class="name">Curology skincare kit </p>
+    <p class="price"> Rs.1999</p>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <div>
+     <button onclick="addToCart('Curology skincare kit',1999)">Add to cart</button>
+     <button type="button" onclick="alert('Added to wishlist')">wishlist</button>
+    </div>
+   </figure>
+   <figure>
+    <img class="homeimg" src="nimg1.PNG" alt="">
+    <p class="name">Biotique honey gel </p>
+    <p class="price"> Rs.250</p>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-solid fa-star-half" style="color: #0c4b0c;"></i>
+    <div>
+     <button onclick="addToCart('Biotique honey gel',250)">Add to cart</button>
+     <button type="button" onclick="alert('Added to wishlist')">wishlist</button>
+    </div>
+   </figure>
+   <figure>
+    <img class="homeimg" src="https://i.pinimg.com/originals/79/a7/8d/79a78da4dc89ebb749efea2ea1ce3b13.jpg" alt="">
+    <p class="name">Trl face kit </p>
+    <p class="price"> Rs.250</p>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-solid fa-star-half" style="color: #0c4b0c;"></i>
+    <div>
+     <button onclick="addToCart('Trl face kit',250)">Add to cart</button>
+     <button type="button" onclick="alert('Added to wishlist')">wishlist</button>
+    </div>
+   </figure>
+  </section>
+  <section class="container flex">
+   <figure>
+    <img class="homeimg" src="jimg.PNG" alt="">
+    <p class="name">Foxtale day cream </p>
+    <p class="price"> Rs.1250</p>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-solid fa-star-half" style="color: #0c4b0c;"></i>
+    <div>
+     <button onclick="addToCart('Foxtale day cream',1250)">Add to cart</button>
+     <button type="button" onclick="alert('Added to wishlist')">wishlist</button>
+    </div>
+   </figure>
+   <figure>
+    <img class="homeimg" src="i.PNG" alt="">
+    <p class="name">Derma and co </p>
+    <p class="price"> Rs.450</p>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <div>
+     <button onclick="addToCart('Derma and co',450)">Add to cart</button>
+     <button type="button" onclick="alert('Added to wishlist')">wishlist</button>
+    </div>
+   </figure>
+   <figure>
+    <img class="homeimg" src="d.PNG" alt="">
+    <p class="name">Derma and co </p>
+    <p class="price"> Rs.599</p>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-solid fa-star-half" style="color: #0c4b0c;"></i>
+    <div>
+     <button onclick="addToCart('Derma and co',599)">Add to cart</button>
+     <button type="button" onclick="alert('Added to wishlist')">wishlist</button>
+    </div>
+   </figure>
+   <figure>
+    <img class="homeimg" src="https://thegirlinthetartanscarf.com/wp-content/uploads/2017/11/Autumn-skincare.jpg" alt="">
+    <p class="name">Hydralon </p>
+    <p class="price"> Rs.599</p>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-solid fa-star-half" style="color: #0c4b0c;"></i>
+    <div>
+     <button onclick="addToCart('Hydralon',599)">Add to cart</button>
+     <button type="button" onclick="alert('Added to wishlist')">wishlist</button>
+    </div>
+   </figure>
+  </section>
+  <footer>
+   <div class="footer-container">
+    <div class="footer-section">
+     <h4>About Priha Cosmetics</h4>
+     <p>Your go-to destination for natural beauty products that enhance your radiance and confidence.</p>
+    </div>
+    <div class="footer-section">
+     <h4>Quick Links</h4>
+     <ul>
+      <li>
+       <a href="index.html">Shop</a>
+      </li>
+      <li>
+       <a href="about.html">Our Story</a>
+      </li>
+      <li>
+       <a href="#">Blog</a>
+      </li>
+      <li>
+       <a href="contact.html">Contact Us</a>
+      </li>
+     </ul>
+    </div>
+    <div class="footer-section">
+     <h4>Customer Service</h4>
+     <ul>
+      <li>
+       <a href="#">FAQs</a>
+      </li>
+      <li>
+       <a href="#">Shipping & Returns</a>
+      </li>
+      <li>
+       <a href="#">Privacy Policy</a>
+      </li>
+      <li>
+       <a href="#">Terms of Service</a>
+      </li>
+     </ul>
+    </div>
+    <div class="footer-section">
+     <h4>Connect with Us</h4>
+     <ul class="social-icons">
+      <li>
+       <a href="#" class="icon-facebook"></a>
+      </li>
+      <li>
+       <a href="#" class="icon-twitter"></a>
+      </li>
+      <li>
+       <a href="#" class="icon-instagram"></a>
+      </li>
+     </ul>
+    </div>
+   </div>
+   <div class="footer-bottom">
+    <p class="copy">&copy; 2024 Priha Cosmetics. All rights reserved. | Designed by Your Company</p>
+   </div>
+  </footer>
+  <script src="app.js" defer></script>
+  <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+ </body>
+</html>

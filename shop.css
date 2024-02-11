@@ -1,0 +1,148 @@
+
+footer {
+	background-color: rgb(12, 75, 12);
+	color: white;
+	padding: 20px 0;
+	text-align: center;
+	grid-row: 3;
+}
+
+.footer-container {
+	display: flex;
+	justify-content: space-between;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.footer-section {
+	width: 25%;
+}
+
+.footer-section h4 {
+	font-size: 18px;
+	margin-bottom: 10px;
+}
+
+.footer-section p, .footer-section ul {
+	font-size: 14px;
+	list-style: none;
+	padding: 0;
+	margin-left: 20px;
+}
+
+.footer-section ul li {
+	margin-bottom: 20px;
+}
+
+.footer-section ul a {
+	color: #fff;
+	text-decoration: none;
+}
+
+.footer-bottom {
+	background-color: white;
+	padding: 10px 0;
+	text-align: center;
+}
+
+.footer-bottom p {
+	font-size: 12px;
+	margin: 0;
+}
+
+.social-icons {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+h1{
+    margin-top: 20px;
+    color:#fff;
+}
+.social-icons li {
+	display: inline-block;
+	margin-right: 10px;
+}
+h3{
+    margin-top: 0px;
+    margin-bottom: 30px;
+
+}
+.icon-facebook, .icon-twitter, .icon-instagram {
+	display: block;
+	width: 20px;
+	height: 20px;
+	background-size: cover;
+}
+
+.icon-facebook {
+	background-image: url("https://cdn-icons-png.flaticon.com/128/145/145802.png");
+}
+
+.icon-twitter {
+	background-image: url("https://cdn-icons-png.flaticon.com/128/3670/3670151.png");
+}
+
+.icon-instagram {
+	background-image: url("https://cdn-icons-png.flaticon.com/128/4138/4138124.png");
+}
+
+.copy {
+	color: rgb(12, 75, 12);
+}
+
+.all {
+	margin-left: 100px;
+}
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #f8f8f8;
+}
+.home {
+	background-size: 600px 600px;
+	width: 80%;
+	margin: 15px auto;
+	display: block;
+	height: 400px;
+	object-fit: cover;
+	text-decoration: none;
+}
+header {
+    background-color:rgb(12, 75, 12);
+    color: #fff;
+    text-align: center;
+    font-size: 15px;
+    height: 80px;
+    font-family: 'Times New Roman', Times, serif;
+}
+a{
+    color:rgb(12, 75, 12);
+}
+nav {
+    background-color:white;
+    color: rgb(12, 75, 12);
+    text-align: center; 
+    padding-top: 20px; 
+    padding-bottom: 20px; 
+}
+.id{
+    color:rgb(12, 75, 12);
+    font-size: 20px;
+    padding-left: 20px;
+    padding-right: 20px;  
+}
+.id1{
+    color:rgb(12, 75, 12);
+    font-size: 25px;
+}
+section {
+    padding: 0px;
+}
+h1{
+    text-align: center;
+    object-fit: cover;   
+}
+p{
+    font-size: 18px;
+    margin-top: 40px;
+}

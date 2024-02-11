@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=, initial-scale=1.0">
+  <title>Hair-Accessories</title>
+  <link rel="shortcut icon" href="priha.png" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="beauty1.css">
+ </head>
+ <body>
+  <header class="container">
+   <nav class="flex space-between border">
+    <div class="left flex">
+     <img class="logo" src="priha.png" alt="">
+     <ul class="flex item-center justify-center uppercase">
+      <li>
+       <a class="icon" href="skin.html">Skincare</a>
+      </li>
+      <li>
+       <a class="icon" href="lip.html">Makeup</a>
+      </li>
+      <li>
+       <a class="icon" href="hair.html">Haircare</a>
+      </li>
+     </ul>
+    </div>
+    <div class="right flex item-center uppercase space-between">
+     <input class="search all" placeholder="Search for products">
+     <ul class="flex item-center justify-center uppercase">
+      <li>
+       <a class="Wishlist mx-2" href="">Wishlist</a>
+      </li>
+      <li>
+       <a class="Cart mx-2" href="">cart</a>
+      </li>
+      <li>
+       <a class="Profile mx-2" href="">Profile</a>
+      </li>
+     </ul>
+    </div>
+   </nav>
+  </header>
+  <section class="container flex">
+   <figure>
+    <img class="homeimg" src="https://media.centrepointstores.com/i/centrepoint/165753709_01-2100.jpg?fmt=auto&$quality-standard$&sm=c&$prodimg-m-prt-pdp-2x$" alt="">
+    <p class="name">Newline crunchies combo</p>
+    <p class="price"> Rs.100</p>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-solid fa-star-half" style="color: #0c4b0c;"></i>
+    <div>
+     <button onclick="addToCart('Newline crunchies combo',100)">Add to cart</button>
+     <button type="button" onclick="alert('Added to wishlist')">wishlist</button>
+    </div>
+   </figure>
+   <figure>
+    <img class="homeimg" src="https://media.allure.com/photos/5a1f06019fd3ba5fb06acbb3/master/pass/pinterest-hair-accessories.png" alt="">
+    <p class="name">Nallya head band</p>
+    <p class="price"> Rs.100</p>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-solid fa-star-half" style="color: #0c4b0c;"></i>
+    <div>
+     <button onclick="addToCart('Nallya head band',100)">Add to cart</button>
+     <button type="button" onclick="alert('Added to wishlist')">wishlist</button>
+    </div>
+   </figure>
+   <figure>
+    <img class="homeimg" src="data:image/jpeg;base64,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" alt="">
+    <p class="name">Laven hair clip combo</p>
+    <p class="price"> Rs.299</p>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-solid fa-star-half" style="color: #0c4b0c;"></i>
+    <div>
+     <button onclick="addToCart('Laven hair clip combo',299)">Add to cart</button>
+     <button type="button" onclick="alert('Added to wishlist')">wishlist</button>
+    </div>
+   </figure>
+   <figure>
+    <img class="homeimg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpT4tkQ2v23uku9AJv8qYY813Z_xXRrjz-Z-9zmrHY022vQ9cZ2zrGoRR8lb-5K97XnU8&usqp=CAU" alt="">
+    <p class="name">Ellen floral gajra</p>
+    <p class="price"> Rs.99</p>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <div>
+     <button onclick="addToCart('Ellen floral gajra',99)">Add to cart</button>
+     <button type="button" onclick="alert('Added to wishlist')">wishlist</button>
+    </div>
+   </figure>
+  </section>
+  <section class="container flex">
+   <figure>
+    <img class="homeimg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZL_qvRFHd1xPk10n1EK4fbVFsp3Oo4a69AgnOJdNN1tMLVNos42eNXDRDaN8xEcZuFxU&usqp=CAU" alt="">
+    <p class="name">Daller bridal gajra</p>
+    <p class="price"> Rs.149</p>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <div>
+     <button onclick="addToCart('Daller bridal gajra',149)">Add to cart</button>
+     <button type="button" onclick="alert('Added to wishlist')">wishlist</button>
+    </div>
+   </figure>
+   <figure>
+    <img class="homeimg" src="https://www.thrivenaija.com/wp-content/uploads/2019/08/bandana-headband-1-800x1200.jpg" alt="">
+    <p class="name">Koral hair bands</p>
+    <p class="price"> Rs.199</p>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <div>
+     <button onclick="addToCart('Koral hair bands',199)">Add to cart</button>
+     <button type="button" onclick="alert('Added to wishlist')">wishlist</button>
+    </div>
+   </figure>
+   <figure>
+    <img class="homeimg" src="https://i.pinimg.com/originals/3c/c2/30/3cc2307719854cc4f0ed11deb7cda5a6.jpg" alt="">
+    <p class="name">Denim hair bands</p>
+    <p class="price"> Rs.199</p>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <div>
+     <button onclick="addToCart('Denim hair bands',199)">Add to cart</button>
+     <button type="button" onclick="alert('Added to wishlist')">wishlist</button>
+    </div>
+   </figure>
+   <figure>
+    <img class="homeimg" src="https://www.jiomart.com/images/product/original/rvrlsjqo6a/butterfly-shape-matte-hair-clutcher-hair-claw-clips-tight-grip-no-slip-hair-clutcher-for-women-and-girl-multicolor-pack-of-4-product-images-rvrlsjqo6a-0-202302240719.jpg?im=Resize=(500,630)" alt="">
+    <p class="name">Cuteal clutch combo</p>
+    <p class="price"> Rs.200</p>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <div>
+     <button onclick="addToCart('Cuteal clutch combo',200)">Add to cart</button>
+     <button type="button" onclick="alert('Added to wishlist')">wishlist</button>
+    </div>
+   </figure>
+  </section>
+  <section class="container flex">
+   <figure>
+    <img class="homeimg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRemADddtpUtYwGnxb0BcD6AVwT3uWq7pBnZQ&usqp=CAU" alt="">
+    <p class="name">Wella claw clips </p>
+    <p class="price"> Rs.299</p>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <div>
+     <button onclick="addToCart('Wella claw clips',299)">Add to cart</button>
+     <button type="button" onclick="alert('Added to wishlist')">wishlist</button>
+    </div>
+   </figure>
+   <figure>
+    <img class="homeimg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxiTmKIrrFHcnj7UQ_v3eIJOSvCNsqNxeZPzm9zJ8ZBRmi99ZP7-whRIOuZwyNRojFwHo&usqp=CAU" alt="">
+    <p class="name">Pearl claw clutches </p>
+    <p class="price"> Rs.350</p>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <div>
+     <button onclick="addToCart('Pearl claw clutches',350)">Add to cart</button>
+     <button type="button" onclick="alert('Added to wishlist')">wishlist</button>
+    </div>
+   </figure>
+   <figure>
+    <img class="homeimg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKcIwlcdlxsjB04wTpuZwCOf8SQVXBok3WGHU9CAN1PlOvg9slzba6pKoUXIdn2Qx7OB4&usqp=CAU" alt="">
+    <p class="name">Banel crunchies combo </p>
+    <p class="price"> Rs.299</p>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <div>
+     <button onclick="addToCart('Banel crunchies combo',299)">Add to cart</button>
+     <button type="button" onclick="alert('Added to wishlist')">wishlist</button>
+    </div>
+   </figure>
+   <figure>
+    <img class="homeimg" src="https://i.pinimg.com/originals/89/4c/18/894c18c31fbfdddee5e7e75ba211baaf.jpg" alt="">
+    <p class="name">Bridal pearl vine </p>
+    <p class="price"> Rs.299</p>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <div>
+     <button onclick="addToCart('Bridal pearl vine',299)">Add to cart</button>
+     <button type="button" onclick="alert('Added to wishlist')">wishlist</button>
+    </div>
+   </figure>
+  </section>
+  <section class="container flex">
+   <figure>
+    <img class="homeimg" src="https://tse4.mm.bing.net/th?id=OIP.Y1ZF-CnOBc9JV-5K4nxnSQHaEK&pid=Api&P=0&h=180" alt="">
+    <p class="name">Kipoxi hair straightner </p>
+    <p class="price"> Rs.499</p>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <div>
+     <button onclick="addToCart('Kipoxi hair straightner',499)">Add to cart</button>
+     <button type="button" onclick="alert('Added to wishlist')">wishlist</button>
+    </div>
+   </figure>
+   <figure>
+    <img class="homeimg" src="https://tse3.mm.bing.net/th?id=OIP.DUNy9FFo6IPZijdvlK6segHaHa&pid=Api&P=0&h=180" alt="">
+    <p class="name">Dylon hairstyling kit </p>
+    <p class="price"> Rs.1499</p>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <div>
+     <button onclick="addToCart('Dylon hairstyling kit',1499)">Add to cart</button>
+     <button type="button" onclick="alert('Added to wishlist')">wishlist</button>
+    </div>
+   </figure>
+   <figure>
+    <img class="homeimg" src="https://media.4rgos.it/i/Argos/7095843_R_Z001A" alt="">
+    <p class="name">Treasemmme hair kit </p>
+    <p class="price"> Rs.499</p>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <div>
+     <button onclick="addToCart('Treasemmme hair kit',499)">Add to cart</button>
+     <button type="button" onclick="alert('Added to wishlist')">wishlist</button>
+    </div>
+   </figure>
+   <figure>
+    <img class="homeimg" src="https://shaadiwish.com/blog/wp-content/uploads/2018/10/4Aanalsavaliya-1.jpg" alt="">
+    <p class="name">Jullia hair jewellery </p>
+    <p class="price"> Rs.499</p>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+    <div>
+     <button onclick="addToCart('Jullia hair jewellery',499)">Add to cart</button>
+     <button type="button" onclick="alert('Added to wishlist')">wishlist</button>
+    </div>
+   </figure>
+  </section>
+  </div>
+  <div>
+   <section class="container flex">
+    <figure>
+     <img class="homeimg" src="https://assets.onbuy.com/i19/product/4e42e91c6438487092f715c9913be3ff-l8529890/remington-s8598-keratin-protect-intelligent-hair-straightener-ceramic-fast-230c.jpg" alt="">
+     <p class="name">Remington hair straightner </p>
+     <p class="price"> Rs.1199</p>
+     <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+     <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+     <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+     <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+     <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+     <div>
+      <button onclick="addToCart('Remington hair straightner',1199)">Add to cart</button>
+      <button type="button" onclick="alert('Added to wishlist')">wishlist</button>
+     </div>
+    </figure>
+    <figure>
+     <img class="homeimg" src="https://tse4.mm.bing.net/th?id=OIP.5GvhNi_Rxd3CRUE24yX_bAHaGL&pid=Api&P=0&h=180" alt="">
+     <p class="name">Rainbow clutches </p>
+     <p class="price"> Rs.199</p>
+     <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+     <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+     <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+     <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+     <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+     <div>
+      <button onclick="addToCart('Rainbow clutches',199)">Add to cart</button>
+      <button type="button" onclick="alert('Added to wishlist')">wishlist</button>
+     </div>
+    </figure>
+    <figure>
+     <img class="homeimg" src="https://www.dhresource.com/0x0s/f2-albu-g7-M00-86-00-rBVaSlq8zIWAb38GAAQ7hWXAze0671.jpg/women-fashion-crystal-rhinestone-flower-hair.jpg" alt="">
+     <p class="name">Floral clip combo </p>
+     <p class="price"> Rs.250</p>
+     <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+     <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+     <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+     <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+     <i class="fa-solid fa-star-half" style="color: #0c4b0c;"></i>
+     <div>
+      <button onclick="addToCart('Floral clip combo',250)">Add to cart</button>
+      <button type="button" onclick="alert('Added to wishlist')">wishlist</button>
+     </div>
+    </figure>
+    <figure>
+     <img class="homeimg" src="https://i.pinimg.com/736x/02/73/3f/02733f7599f37c00eb48120be3e0a96c.jpg" alt="">
+     <p class="name">Pearl hair dresser </p>
+     <p class="price"> Rs.250</p>
+     <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+     <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+     <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+     <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+     <i class="fa-solid fa-star-half" style="color: #0c4b0c;"></i>
+     <div>
+      <button onclick="addToCart('Pearl hair dresser',250)">Add to cart</button>
+      <button type="button" onclick="alert('Added to wishlist')">wishlist</button>
+     </div>
+    </figure>
+   </section>
+   <section class="container flex">
+    <figure>
+     <img class="homeimg" src="https://i.pinimg.com/originals/79/9d/dc/799ddc609f34bc11eff129cea65e414e.jpg" alt="">
+     <p class="name">Mogra mangtika </p>
+     <p class="price"> Rs.250</p>
+     <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+     <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+     <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+     <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+     <i class="fa-solid fa-star-half" style="color: #0c4b0c;"></i>
+     <div>
+      <button onclick="addToCart('Mogra mangtika',250)">Add to cart</button>
+      <button type="button" onclick="alert('Added to wishlist')">wishlist</button>
+     </div>
+    </figure>
+    <figure>
+     <img class="homeimg" src="http://stylesweekly.com/wp-content/uploads/2015/10/different-fun-and-flirty-hair-accessories14.jpg" alt="">
+     <p class="name">Flirty hair clutches </p>
+     <p class="price"> Rs.350</p>
+     <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+     <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+     <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+     <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+     <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+     <div>
+      <button onclick="addToCart('Flirty hair clutches',350)">Add to cart</button>
+      <button type="button" onclick="alert('Added to wishlist')">wishlist</button>
+     </div>
+    </figure>
+    <figure>
+     <img class="homeimg" src="https://cdn.wonderfuldiy.com/wp-content/uploads/2018/08/DIY-no-sew-wire-headband.jpg" alt="">
+     <p class="name">Quirky hair bands </p>
+     <p class="price"> Rs.299</p>
+     <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+     <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+     <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+     <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+     <i class="fa-solid fa-star-half" style="color: #0c4b0c;"></i>
+     <div>
+      <button onclick="addToCart('Quirky hair bands',299)">Add to cart</button>
+      <button type="button" onclick="alert('Added to wishlist')">wishlist</button>
+     </div>
+    </figure>
+    <figure>
+     <img class="homeimg" src="https://i.pinimg.com/originals/a8/fd/ec/a8fdecc6ffad8825d2de59c5f6d4fe35.jpg" alt="">
+     <p class="name">Dallo hair clips </p>
+     <p class="price"> Rs.350</p>
+     <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+     <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+     <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+     <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+     <i class="fa-regular fa-star" style="color: #0c4b0c;"></i>
+     <div>
+      <button onclick="addToCart('Dallo hair clips',350)">Add to cart</button>
+      <button type="button" onclick="alert('Added to wishlist')">wishlist</button>
+     </div>
+    </figure>
+   </section>
+   <footer>
+    <div class="footer-container">
+     <div class="footer-section">
+      <h4>About Priha Cosmetics</h4>
+      <p>Your go-to destination for natural beauty products that enhance your radiance and confidence.</p>
+     </div>
+     <div class="footer-section">
+      <h4>Quick Links</h4>
+      <ul>
+       <li>
+        <a href="index.html">Shop</a>
+       </li>
+       <li>
+        <a href="about.html">Our Story</a>
+       </li>
+       <li>
+        <a href="#">Blog</a>
+       </li>
+       <li>
+        <a href="contact.html">Contact Us</a>
+       </li>
+      </ul>
+     </div>
+     <div class="footer-section">
+      <h4>Customer Service</h4>
+      <ul>
+       <li>
+        <a href="#">FAQs</a>
+       </li>
+       <li>
+        <a href="#">Shipping & Returns</a>
+       </li>
+       <li>
+        <a href="#">Privacy Policy</a>
+       </li>
+       <li>
+        <a href="#">Terms of Service</a>
+       </li>
+      </ul>
+     </div>
+     <div class="footer-section">
+      <h4>Connect with Us</h4>
+      <ul class="social-icons">
+       <li>
+        <a href="#" class="icon-facebook"></a>
+       </li>
+       <li>
+        <a href="#" class="icon-twitter"></a>
+       </li>
+       <li>
+        <a href="#" class="icon-instagram"></a>
+       </li>
+      </ul>
+     </div>
+    </div>
+    <div class="footer-bottom">
+     <p class="copy">&copy; 2024 Priha Cosmetics. All rights reserved. | Designed by Your Company</p>
+    </div>
+   </footer>
+   <script src="app.js" defer></script>
+   <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+ </body>
+</html>

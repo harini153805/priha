@@ -1,0 +1,45 @@
+.right {
+	align-items: center;
+	margin-left: 20px;
+	height: 100%;
+}
+
+.left {
+	margin-right: 20px;
+}
+
+.search {
+	left: 0;
+	margin-right: 0px;
+ /* Prevent the search input from shrinking */;
+}
+
+.flex {
+	display: flex;
+	
+}
+
+.item-center {
+	align-items: center;
+}
+
+.justify-center {
+	justify-content: center;
+}
+
+.space-between {
+	justify-content: space-between;
+}
+
+.uppercase {
+	text-transform: uppercase;
+}
+
+.mx-2 {
+	
+	text-decoration: none;
+	color: aliceblue;
+	display: flex;
+	padding-top: 10px;
+	
+}
